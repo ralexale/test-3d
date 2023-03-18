@@ -1,4 +1,5 @@
 import Spline from "@splinetool/react-spline";
+import bgSound from "./assets/bg-sound-fire.mp3";
 
 export default function App() {
     return (
@@ -10,6 +11,9 @@ export default function App() {
                     </h1>
                 </article>
                 <Spline scene="https://prod.spline.design/oVIp866wZdeJPZER/scene.splinecode" />
+                <div className="absolute top-28 left-8">
+                    <audio src={bgSound} controls autoplay />
+                </div>
             </section>
         </>
     );
